@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="zh-cn"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="zh-cn"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh-cn"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh-cn"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>组件 - Tom Template</title>
+  <link rel="stylesheet" href="./static/css/common/reset.css" />
+  <link rel="stylesheet" href="./static/css/docs/grid.css" />
+  <link rel="stylesheet" href="./static/css/common/component.css" />
+  <link rel="stylesheet" href="./static/js/prettify/prettify.css" />
+  <link rel="stylesheet" href="./static/css/docs/common.css" />
+</head>
+<body>
+  <div id="doc-hd">
+  	<a href="index.html"><img src="./static/img/docs/logo.png" width="165" height="120" class="logo" alt="Tom Template" /></a>
+  	<h1>Tom Template<em>基础模板框架</em></h1>
+  	<div class="tom-pri-nav">
+  		<ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./basic.html">基础</a></li>
+        <li class="active"><a href="./component.html">组件</a></li>
+        <li><a href="./animation.html">动画</a></li>
+        <li><a href="./example/index.html" target="_blank">演示</a></li>
+        <li><a href="https://github.com/ztl/tomtemplate/" target="_blank">下载</a></li>
+      </ul>
+  	</div>
+  </div>
+  <div id="doc-bd">
+  	<div class="grid-2c1">
+  		<div class="col-1">
+
+  			<div class="tom-content">
+  				<h1>组件</h1>
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_mod">模块包装 <em>ui-mod</em></h2>
+  					<p class="tom-desc">通用的模块包装样式。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-mod">
+  	<div class="ui-mod-hd">
+  		<h2 class="tit">模块名称</h2>
+  		<div class="subtit">二级名称</div>
+  		<div class="extra">
+  			<a href="#" class="more">更多»</a>
+  		</div>
+  	</div>
+  	<div class="ui-mod-bd">
+  		模块内容
+  	</div>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-mod"&gt;
+  	&lt;div class="ui-mod-hd"&gt;
+  		&lt;h2 class="tit"&gt;模块名称&lt;/h2&gt;
+  		&lt;div class="subtit"&gt;二级名称&lt;/div&gt;
+  		&lt;div class="extra"&gt;
+  			&lt;a href="#" class="more"&gt;更多»&lt;/a&gt;
+  		&lt;/div&gt;
+  	&lt;/div&gt;
+  	&lt;div class="ui-mod-bd"&gt;
+  		模块内容
+  	&lt;/div&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_icon">图标 <em>ui-icon</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <i class="ui-icon"></i>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;i class="ui-icon"&gt;&lt;/i&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_rating">评星 <em>ui-rating</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-rating"><span class="bar" style="width:80%;"></span></div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-rating"&gt;&lt;span class="bar" style="width:80%;"&gt;&lt;/span&gt;&lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_progress">进度 <em>ui-progress</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-progress"><span class="bar" style="width:60%;"></span></div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-progress"&gt;&lt;span class="bar" style="width:60%;"&gt;&lt;/span&gt;&lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->				
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_btn">按钮 <em>ui-btn</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <input type="button" class="ui-btn" value="确定" />
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;input type="button" class="ui-btn" value="确定" /&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_nav">主导航 <em>ui-nav</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-nav">
+  	<ul>
+  		<li class="active"><a href="#">首页</a></li>
+  		<li><a href="#">新闻</a></li>
+  		<li><a href="#">体育</a></li>
+  		<li><a href="#">娱乐</a></li>
+  		<li><a href="#">数码</a></li>
+  		<li><a href="#">女人</a></li>
+  		<li><a href="#">财经</a></li>
+  		<li><a href="#">汽车</a></li>
+  		<li><a href="#">旅游</a></li>
+  	</ul>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="pri-nav"&gt;
+  	&lt;ul&gt;
+  		&lt;li class="active"&gt;&lt;a href="#"&gt;首页&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;新闻&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;体育&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;娱乐&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;数码&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;女人&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;财经&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;汽车&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;旅游&lt;/a&gt;&lt;/li&gt;
+  	&lt;/ul&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_crumb">面包屑 <em>ui-crumb</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-crumb">
+  	<a href="#">首页</a> &gt; <a href="#">电影</a> &gt; 详情
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-crumb"&gt;
+  	&lt;a href="#"&gt;首页&lt;/a&gt; &gt; &lt;a href="#"&gt;电影&lt;/a&gt; &gt; 详情
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_tab">标签 <em>ui-tab</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-tab">
+  	<ul>
+  		<li class="active"><a href="#">新闻</a></li>
+  		<li><a href="#">图片</a></li>
+  		<li><a href="#">军事</a></li>
+  	</ul>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-tab"&gt;
+  	&lt;ul&gt;
+  		&lt;li class="active"&gt;&lt;a href="#"&gt;新闻&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;图片&lt;/a&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;a href="#"&gt;军事&lt;/a&gt;&lt;/li&gt;
+  	&lt;/ul&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_pagination">分页 <em>ui-pagination</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-pagination">
+  	<a href="#" class="first">首页</a>
+  	<a href="#" class="prev">上一页</a>
+  	<a href="#">1</a>
+  	<span>2</span>
+  	<a href="#">3</a>
+  	<a href="#">4</a>
+  	<a href="#">5</a>
+  	<a href="#">6</a>
+  	<a href="#">7</a>
+  	<a href="#">8</a>
+  	<a href="#">9</a>
+  	<a href="#">10</a>
+  	<a href="#" class="next">下一页</a>
+  	<a href="#" class="last">尾页</a>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-pagination"&gt;
+  	&lt;a href="#" class="first"&gt;首页&lt;/a&gt;
+  	&lt;a href="#" class="prev"&gt;上一页&lt;/a&gt;
+  	&lt;a href="#"&gt;1&lt;/a&gt;
+  	&lt;span&gt;2&lt;/span&gt;
+  	&lt;a href="#"&gt;3&lt;/a&gt;
+  	&lt;a href="#"&gt;4&lt;/a&gt;
+  	&lt;a href="#"&gt;5&lt;/a&gt;
+  	&lt;a href="#"&gt;6&lt;/a&gt;
+  	&lt;a href="#"&gt;7&lt;/a&gt;
+  	&lt;a href="#"&gt;8&lt;/a&gt;
+  	&lt;a href="#"&gt;9&lt;/a&gt;
+  	&lt;a href="#"&gt;10&lt;/a&gt;
+  	&lt;a href="#" class="next"&gt;下一页&lt;/a&gt;
+  	&lt;a href="#" class="last"&gt;尾页&lt;/a&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_figure">图文 <em>ui-figure | ui-figure-v（竖向） | ui-figure-h（横向）</em></h2>
+  					<p class="tom-desc">默认是竖向的样式，修改 class="ui-figure-h" 可改为横向。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-figure" style="width:130px;">
+  	<div class="pic">
+  		<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  	</div>
+  	<div class="cont">
+  		<h3><a href="#">标题标题标题标题</a></h3>
+  	</div>
+  </div>
+  						<h3 class="tom-subtit">Demo（横向）：</h3>
+  <!-- 横向 -->
+  <div class="ui-figure-h">
+  	<div class="pic">
+  		<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  	</div>
+  	<div class="cont">
+  		<h3><a href="#">标题标题标题标题</a></h3>
+  		<p>简介简介简介简介简介</p>
+  	</div>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-figure" style="width:130px;"&gt;
+  	&lt;div class="pic"&gt;
+  		&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  	&lt;/div&gt;
+  	&lt;div class="cont"&gt;
+  		&lt;h3&gt;&lt;a href="#"&gt;标题标题标题标题&lt;/a&gt;&lt;/h3&gt;
+  	&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- 横向 --&gt;
+  &lt;div class="ui-figure-h"&gt;
+  	&lt;div class="pic"&gt;
+  		&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  	&lt;/div&gt;
+  	&lt;div class="cont"&gt;
+  		&lt;h3&gt;&lt;a href="#"&gt;标题标题标题标题&lt;/a&gt;&lt;/h3&gt;
+  		&lt;p&gt;简介简介简介简介简介&lt;/p&gt;
+  	&lt;/div&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_dl">定义列表 <em>ui-dl | ui-dl-v（竖向） | ui-dl-h（横向）</em></h2>
+  					<p class="tom-desc">默认是竖向的样式，修改 class="ui-dl-h" 可改为横向。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <dl class="ui-dl">
+  	<dt>会计师</dt>
+  	<dd>初级会计师 中级会计师 高级会计</dd>
+  	<dt>教师</dt>
+  	<dd>幼儿教师 小学教师 中学教师</dd>
+  </dl>
+  						<h3 class="tom-subtit">Demo（横向）：</h3>
+  <dl class="ui-dl-h">
+  	<dt>会计师</dt>
+  	<dd>初级会计师 中级会计师 高级会计</dd>
+  	<dt>教师</dt>
+  	<dd>幼儿教师 小学教师 中学教师</dd>
+  </dl>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;dl class="ui-dl"&gt;
+  	&lt;dt&gt;会计师&lt;/dt&gt;
+  	&lt;dd&gt;初级会计师 中级会计师 高级会计&lt;/dd&gt;
+  	&lt;dt&gt;教师&lt;/dt&gt;
+  	&lt;dd&gt;幼儿教师 小学教师 中学教师&lt;/dd&gt;
+  &lt;/dl&gt;
+
+  &lt;!-- 横向 --&gt;
+  &lt;dl class="ui-dl-h"&gt;
+  	&lt;dt&gt;会计师&lt;/dt&gt;
+  	&lt;dd&gt;初级会计师 中级会计师 高级会计&lt;/dd&gt;
+  	&lt;dt&gt;教师&lt;/dt&gt;
+  	&lt;dd&gt;幼儿教师 小学教师 中学教师&lt;/dd&gt;
+  &lt;/dl&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_tlist">文字列表 <em>ui-tlist | ui-tlist-v（竖向） | ui-tlist-h（横向） | ui-tlist-rank（带数字排行）</em></h2>
+  					<p class="tom-desc">默认是竖向的样式，修改 class="ui-tlist-h" 可改为横向。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <ul class="ui-tlist">
+  	<li>• <a href="#">曼联宣布新主帅</a></li>
+  	<li>• <a href="#">东莞警方查涉毒酒店</a></li>
+  	<li>• <a href="#">张柏芝赴台会好友叙旧</a></li>
+  	<li>• <a href="#">刘德华为女儿庆生</a></li>
+  	<li>• <a href="#">平安证券被罚7575万</a></li>
+  </ul>
+  						<h3 class="tom-subtit">Demo（横向）：</h3>
+  <ul class="ui-tlist-h">
+  	<li>• <a href="#">曼联宣布新主帅</a></li>
+  	<li>• <a href="#">东莞警方查涉毒酒店</a></li>
+  	<li>• <a href="#">张柏芝赴台会好友叙旧</a></li>
+  	<li>• <a href="#">刘德华为女儿庆生</a></li>
+  	<li>• <a href="#">平安证券被罚7575万</a></li>
+  	<li>• <a href="#">曼联宣布新主帅</a></li>
+  </ul>
+  						<h3 class="tom-subtit">Demo（带数字排行）：</h3>
+  <ul class="ui-tlist-rank">
+  	<li class="hot first"><em class="num">1</em><a href="#">曼联宣布新主帅</a></li>
+  	<li class="hot second"><em class="num">2</em><a href="#">东莞警方查涉毒酒店</a></li>
+  	<li class="hot third"><em class="num">3</em><a href="#">张柏芝赴台会好友叙旧</a></li>
+  	<li><em class="num">4</em><a href="#">刘德华为女儿庆生</a></li>
+  	<li><em class="num">5</em><a href="#">平安证券被罚7575万</a></li>
+  	<li><em class="num">6</em><a href="#">曼联宣布新主帅</a></li>
+  </ul>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;ul class="ui-tlist"&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;东莞警方查涉毒酒店&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;张柏芝赴台会好友叙旧&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;刘德华为女儿庆生&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;平安证券被罚7575万&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- 横向 --&gt;
+  &lt;ul class="ui-tlist-h"&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;东莞警方查涉毒酒店&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;张柏芝赴台会好友叙旧&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;刘德华为女儿庆生&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;平安证券被罚7575万&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;• &lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- 带数字排行 --&gt;
+  &lt;ul class="ui-tlist-rank"&gt;
+  	&lt;li class="hot first"&gt;&lt;em class="num"&gt;1&lt;/em&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/li&gt;
+  	&lt;li class="hot second"&gt;&lt;em class="num"&gt;2&lt;/em&gt;&lt;a href="#"&gt;东莞警方查涉毒酒店&lt;/a&gt;&lt;/li&gt;
+  	&lt;li class="hot third"&gt;&lt;em class="num"&gt;3&lt;/em&gt;&lt;a href="#"&gt;张柏芝赴台会好友叙旧&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;&lt;em class="num"&gt;4&lt;/em&gt;&lt;a href="#"&gt;刘德华为女儿庆生&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;&lt;em class="num"&gt;5&lt;/em&gt;&lt;a href="#"&gt;平安证券被罚7575万&lt;/a&gt;&lt;/li&gt;
+  	&lt;li&gt;&lt;em class="num"&gt;6&lt;/em&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_plist">图片列表 <em>ui-plist | ui-plist-h（横向） | ui-plist-v（竖向）</em></h2>
+  					<p class="tom-desc">默认是横向的样式，修改 class="ui-plist-v" 可改为竖向。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-plist">
+  	<ul>
+  		<li class="ui-figure">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  		<li class="ui-figure">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  		<li class="ui-figure">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  		<li class="ui-figure">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  		<li class="ui-figure">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  	</ul>
+  </div>
+
+  						<h3 class="tom-subtit">Demo（竖向）：</h3>
+  <!-- 竖向 -->
+  <div class="ui-plist-v">
+  	<ul>
+  		<li class="ui-figure" style="width:130px;">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt=""></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  		<li class="ui-figure" style="width:130px;">
+  			<div class="pic">
+  				<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="108" alt=""></a>
+  			</div>
+  			<div class="cont">
+  				<h3><a href="#">曼联宣布新主帅</a></h3>
+  			</div>
+  		</li>
+  	</ul>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-plist"&gt;
+  	&lt;ul&gt;
+  		&lt;li class="ui-figure"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="ui-figure"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="ui-figure"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="ui-figure"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="ui-figure"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt="" /&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  	&lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;!-- 竖向 --&gt;
+  &lt;div class="ui-plist-v"&gt;
+  	&lt;ul&gt;
+  		&lt;li class="ui-figure" style="width:130px;"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt=""&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="ui-figure" style="width:130px;"&gt;
+  			&lt;div class="pic"&gt;
+  				&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="130" height="108" alt=""&gt;&lt;/a&gt;
+  			&lt;/div&gt;
+  			&lt;div class="cont"&gt;
+  				&lt;h3&gt;&lt;a href="#"&gt;曼联宣布新主帅&lt;/a&gt;&lt;/h3&gt;
+  			&lt;/div&gt;
+  		&lt;/li&gt;
+  	&lt;/ul&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_list">混合列表 <em>ui-list | ui-list-v（竖向） | ui-list-h（横向）</em></h2>
+  					<p class="tom-desc">默认是竖向的样式，修改 class="ui-list-h" 可改为横向。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <ul class="ui-list">
+  	<li>混合列表项1</li>
+  	<li>混合列表项2</li>
+  	<li>混合列表项3</li>
+  </ul>
+  						<h3 class="tom-subtit">Demo（横向）：</h3>
+  <ul class="ui-list-h">
+  	<li>混合列表项1</li>
+  	<li>混合列表项2</li>
+  	<li>混合列表项3</li>
+  </ul>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;ul class="ui-list"&gt;
+  	&lt;li&gt;混合列表项1&lt;/li&gt;
+  	&lt;li&gt;混合列表项2&lt;/li&gt;
+  	&lt;li&gt;混合列表项3&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- 横向 --&gt;
+  &lt;ul class="ui-list-h"&gt;
+  	&lt;li&gt;混合列表项1&lt;/li&gt;
+  	&lt;li&gt;混合列表项2&lt;/li&gt;
+  	&lt;li&gt;混合列表项3&lt;/li&gt;
+  &lt;/ul&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_table">表格 <em>ui-table</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <table border="0" cellpadding="0" cellspacing="0" class="ui-table" width="100%">
+  	<caption>说明文字</caption>
+  	<tr>
+  		<th>时间</th>
+  		<th>轮次</th>
+  		<th>对阵</th>
+  		<th>播放</th>
+  	</tr>
+  	<tr>
+  		<td>2013-05-19 23:00</td>
+  		<td>第38轮</td>
+  		<td>维甘2:2阿斯顿维拉</td>
+  		<td>全场 集锦</td>
+  	</tr>
+  	<tr class="even">
+  		<td>2013-05-19 23:00</td>
+  		<td>第38轮</td>
+  		<td>维甘2:2阿斯顿维拉</td>
+  		<td>全场 集锦</td>
+  	</tr>
+  	<tr>
+  		<td>2013-05-19 23:00</td>
+  		<td>第38轮</td>
+  		<td>维甘2:2阿斯顿维拉</td>
+  		<td>全场 集锦</td>
+  	</tr>
+  	<tr class="even">
+  		<td>2013-05-19 23:00</td>
+  		<td>第38轮</td>
+  		<td>维甘2:2阿斯顿维拉</td>
+  		<td>全场 集锦</td>
+  	</tr>
+  	<tr>
+  		<td>2013-05-19 23:00</td>
+  		<td>第38轮</td>
+  		<td>维甘2:2阿斯顿维拉</td>
+  		<td>全场 集锦</td>
+  	</tr>
+  </table>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;table border="0" cellpadding="0" cellspacing="0" class="ui-table" width="100%"&gt;
+  	&lt;caption&gt;说明文字&lt;/caption&gt;
+  	&lt;tr&gt;
+  		&lt;th&gt;时间&lt;/th&gt;
+  		&lt;th&gt;轮次&lt;/th&gt;
+  		&lt;th&gt;对阵&lt;/th&gt;
+  		&lt;th&gt;播放&lt;/th&gt;
+  	&lt;/tr&gt;
+  	&lt;tr&gt;
+  		&lt;td&gt;2013-05-19 23:00&lt;/td&gt;
+  		&lt;td&gt;第38轮&lt;/td&gt;
+  		&lt;td&gt;维甘2:2阿斯顿维拉&lt;/td&gt;
+  		&lt;td&gt;全场 集锦&lt;/td&gt;
+  	&lt;/tr&gt;
+  	&lt;tr class="even"&gt;
+  		&lt;td&gt;2013-05-19 23:00&lt;/td&gt;
+  		&lt;td&gt;第38轮&lt;/td&gt;
+  		&lt;td&gt;维甘2:2阿斯顿维拉&lt;/td&gt;
+  		&lt;td&gt;全场 集锦&lt;/td&gt;
+  	&lt;/tr&gt;
+  	&lt;tr&gt;
+  		&lt;td&gt;2013-05-19 23:00&lt;/td&gt;
+  		&lt;td&gt;第38轮&lt;/td&gt;
+  		&lt;td&gt;维甘2:2阿斯顿维拉&lt;/td&gt;
+  		&lt;td&gt;全场 集锦&lt;/td&gt;
+  	&lt;/tr&gt;
+  	&lt;tr class="even"&gt;
+  		&lt;td&gt;2013-05-19 23:00&lt;/td&gt;
+  		&lt;td&gt;第38轮&lt;/td&gt;
+  		&lt;td&gt;维甘2:2阿斯顿维拉&lt;/td&gt;
+  		&lt;td&gt;全场 集锦&lt;/td&gt;
+  	&lt;/tr&gt;
+  	&lt;tr&gt;
+  		&lt;td&gt;2013-05-19 23:00&lt;/td&gt;
+  		&lt;td&gt;第38轮&lt;/td&gt;
+  		&lt;td&gt;维甘2:2阿斯顿维拉&lt;/td&gt;
+  		&lt;td&gt;全场 集锦&lt;/td&gt;
+  	&lt;/tr&gt;
+  &lt;/table&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_form">表单 <em>ui-form</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <form class="ui-form">
+    <div class="ui-form-item">
+    	<label class="ui-form-label">姓名：</label>
+      <div class="ui-form-cont">
+        <input type="text" class="ui-input" /> <span>提示提示提示</span>
+      </div>
+    </div>
+    <div class="ui-form-item">
+      <label class="ui-form-label">性别：</label>
+      <div class="ui-form-cont">
+        <input type="radio" id="radio_male" name="sex" /> <label for="radio_male">男</label>&nbsp;&nbsp;
+        <input type="radio" id="radio_female" name="sex" /> <label for="radio_female">女</label>&nbsp;&nbsp;
+        <input type="radio" id="radio_secret" name="sex" checked="checked" /> <label for="radio_secret">保密</label>
+      </div>
+    </div>
+    <div class="ui-form-item">
+      <label class="ui-form-label">年龄：</label>
+      <div class="ui-form-cont">
+        <select class="ui-select">
+          <option>- 请选择 -</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+        </select>
+      </div>
+    </div>
+    <div class="ui-form-item">
+      <label class="ui-form-label">邮箱：</label>
+      <div class="ui-form-cont">
+        <input type="text" class="ui-input ui-input-error" /> <span class="ui-red">错误提示</span>
+      </div>
+    </div>
+    <div class="ui-form-item">
+      <label class="ui-form-label">兴趣：</label>
+      <div class="ui-form-cont">
+        <input type="checkbox" id="cbox_1" /> <label for="cbox_1">文学</label>&nbsp;&nbsp;
+        <input type="checkbox" id="cbox_2" /> <label for="cbox_2">电影</label>&nbsp;&nbsp;
+        <input type="checkbox" id="cbox_3" /> <label for="cbox_3">天文</label>&nbsp;&nbsp;
+      </div>
+    </div>
+    <div class="ui-form-item">
+      <label class="ui-form-label">留言：</label>
+      <div class="ui-form-cont">
+        <textarea class="ui-textarea" style="width:400px;height:150px;"></textarea>
+      </div>
+    </div>
+    <div class="ui-form-item">
+      <label class="ui-form-label"></label>
+      <div class="ui-form-cont">
+        <input type="button" class="ui-btn" value="确定" /> <input type="button" class="ui-btn" value="取消" />
+      </div>
+    </div>
+  </form>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;form class="ui-form"&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;姓名：&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;input type="text" class="ui-input" /&gt; &lt;span&gt;提示提示提示&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;性别：&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;input type="radio" id="radio_male" name="sex" /&gt; &lt;label for="radio_male"&gt;男&lt;/label&gt;&nbsp;&nbsp;
+        &lt;input type="radio" id="radio_female" name="sex" /&gt; &lt;label for="radio_female"&gt;女&lt;/label&gt;&nbsp;&nbsp;
+        &lt;input type="radio" id="radio_secret" name="sex" checked="checked" /&gt; &lt;label for="radio_secret"&gt;保密&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;年龄：&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;select class="ui-select"&gt;
+          &lt;option&gt;- 请选择 -&lt;/option&gt;
+          &lt;option&gt;18&lt;/option&gt;
+          &lt;option&gt;19&lt;/option&gt;
+          &lt;option&gt;20&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;邮箱：&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;input type="text" class="ui-input ui-input-error" /&gt; &lt;span class="ui-red"&gt;错误提示&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;兴趣：&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;input type="checkbox" id="cbox_1" /&gt; &lt;label for="cbox_1"&gt;文学&lt;/label&gt;&nbsp;&nbsp;
+        &lt;input type="checkbox" id="cbox_2" /&gt; &lt;label for="cbox_2"&gt;电影&lt;/label&gt;&nbsp;&nbsp;
+        &lt;input type="checkbox" id="cbox_3" /&gt; &lt;label for="cbox_3"&gt;天文&lt;/label&gt;&nbsp;&nbsp;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;留言：&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;textarea class="ui-textarea" style="width:400px;height:150px;"&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-form-item"&gt;
+      &lt;label class="ui-form-label"&gt;&lt;/label&gt;
+      &lt;div class="ui-form-cont"&gt;
+        &lt;input type="button" class="ui-btn" value="确定" /&gt; &lt;input type="button" class="ui-btn" value="取消" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  			</div>
+
+  		</div>
+  		<div class="col-2">
+  			<ul class="sidebar">
+  				<li><a href="#anchor_mod"><em>ui-mod</em>模块包装</a></li>
+  				<li><a href="#anchor_icon"><em>ui-icon</em>图标</a></li>
+  				<li><a href="#anchor_rating"><em>ui-rating</em>评星</a></li>
+  				<li><a href="#anchor_progress"><em>ui-progress</em>进度</a></li>
+  				<li><a href="#anchor_btn"><em>ui-btn</em>按钮</a></li>
+  				<li><a href="#anchor_nav"><em>ui-nav</em>主导航</a></li>
+  				<li><a href="#anchor_crumb"><em>ui-crumb</em>面包屑</a></li>
+  				<li><a href="#anchor_tab"><em>ui-tab</em>标签</a></li>
+  				<li><a href="#anchor_pagination"><em>ui-pagination</em>分页</a></li>
+  				<li><a href="#anchor_figure"><em>ui-figure</em>图文</a></li>
+  				<li><a href="#anchor_dl"><em>ui-dl</em>定义列表</a></li>
+  				<li><a href="#anchor_tlist"><em>ui-tlist</em>文字列表</a></li>
+  				<li><a href="#anchor_plist"><em>ui-plist</em>图片列表</a></li>
+  				<li><a href="#anchor_list"><em>ui-list</em>混合列表</a></li>
+  				<li><a href="#anchor_table"><em>ui-table</em>表格</a></li>
+  				<li><a href="#anchor_form"><em>ui-form</em>表单</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <div id="doc-ft">
+  	&copy; 2013-2019 Tom Template
+  </div>
+  <a href="#" class="back-to-top" title="返回顶部"></a>
+  <script src="./static/js/common/require.js" data-main="./static/js/docs/common.js"></script>
+  <script src="./static/js/prettify/prettify.js"></script>
+</body>
+</html>

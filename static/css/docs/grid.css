@@ -1,0 +1,26 @@
+/* layout */
+#doc-hd,
+#doc-bd,
+#doc-ft{width:1200px;margin:0 auto;}
+
+/* custom grid */
+.grid-1c,
+.grid-2c1,
+.grid-2c2{width:1200px;margin:0 auto;*zoom:1;}
+
+.grid-2c1 .col-1{width:960px;float:right;}
+.grid-2c1 .col-2{width:210px;float:left;}
+
+.grid-2c2 .col-1{width:495px;float:left;}
+.grid-2c2 .col-2{width:495px;float:right;}
+
+.grid-1c:after,
+.grid-2c1:after,
+.grid-2c2:after,
+.grid-cell:after,
+.row:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.grid-1c,
+.grid-2c1,
+.grid-2c2,
+.grid-cell,
+.row{clear:both;*zoom:1;}

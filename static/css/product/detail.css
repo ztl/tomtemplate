@@ -1,0 +1,29 @@
+/* common */
+body{font-family:"Microsoft Yahei";}
+
+/* section */
+.section{position:relative;min-width:1200px;}
+.section img.bg{width:100%;}
+
+/* text */
+.ui-text{position:absolute;}
+.ui-text h2{font-size:36px;margin-bottom:25px;}
+.ui-text h2 .sub{font-size:26px;}
+.ui-text h3{font-size:16px;}
+/* 文本居左 */
+.ui-text-l{left:20%;top:40%;}
+/* 文本居中 */
+.ui-text-m{left:0;top:8%;width:100%;text-align:center;}
+/* 文本居右 */
+.ui-text-r{right:20%;top:40%;}
+/* 白色文本 */
+.ui-text-white h2{color:#fff;}
+.ui-text-white h3{color:#b6b6b6;}
+/* 黑色文本 */
+.ui-text-black h2{color:#000;}
+.ui-text-black h3{color:#666;}
+
+/* 图片放大模块 */
+.prod-zoom .col{position:relative;width:33.333%;overflow:hidden;float:left;}
+.prod-zoom .col img{width:100%;transition:all 0.2s linear;}
+.prod-zoom .col img:hover{transform:scale(1.1);}

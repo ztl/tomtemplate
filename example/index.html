@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="zh-cn"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="zh-cn"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh-cn"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh-cn"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>演示</title>
+  <link rel="stylesheet" href="../static/css/common/reset.css" />
+  <link rel="stylesheet" href="../static/css/common/component.css" />
+  <link rel="stylesheet" href="../static/css/component/slideshow.css" />
+  <link rel="stylesheet" href="../static/css/component/picslide.css" />
+  <link rel="stylesheet" href="../static/css/component/popup.css" />
+  <style>
+    /* common */
+    a{color:#000;}
+    a:hover{color:#f00;}
+
+    /* layout */
+    #doc-hd,
+    #doc-bd,
+    #doc-ft{width:1000px;margin:0 auto;}
+
+    /* pic list */
+    .ui-plist-1 li{width:150px;height:148px;float:left;margin-right:19px;text-align:center;}
+    .ui-plist-1 h3{font-weight:normal;font-size:12px;padding-top:5px;}
+  </style>
+</head>
+<body>
+  <div id="doc-hd">
+  	<h1>Tom Template</h1>
+  	<div class="ui-nav">
+  		<ul>
+  			<li class="active"><a href="#">首页</a></li>
+  			<li><a href="#">新闻</a></li>
+  			<li><a href="#">体育</a></li>
+  			<li><a href="#">娱乐</a></li>
+  			<li><a href="#">数码</a></li>
+  			<li><a href="#">女人</a></li>
+  			<li><a href="#">财经</a></li>
+  			<li><a href="#">汽车</a></li>
+  			<li><a href="#">旅游</a></li>
+  		</ul>
+  	</div>
+  </div>
+  <div id="doc-bd">
+  	<div class="ui-crumb">
+  		<a href="#">首页</a> &gt; <a href="#">电影</a> &gt; 详情
+  	</div>
+  	<div class="ui-row">
+			<div class="ui-col ui-col-12">
+				<div class="ui-slideshow m-b-10" id="slideshow_1">
+					<ul class="data">
+						<li>
+							<a href="#"><img src="../static/img/common/pic_1.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">邓超承认已与孙俪领证结婚</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_2.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">《关云长》观影报告:姜文才是真正主角</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_3.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">奥巴马复活节大秀篮球球技</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_4.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">超值社交手机最低仅需299元</a></h3>
+							<div class="bg"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ui-col ui-col-12">
+				<h2 class="f-w-b f-s-14"><a href="#">台湾不排除对菲实施第3波制裁</a></h2>
+				<ul class="ui-tlist">
+					<li>• <a href="#">曼联宣布新主帅 莫耶斯年薪500万</a></li>
+					<li>• <a href="#" class="ui-red">东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+					<li>• <a href="#">张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+					<li>• <a href="#">刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+					<li>• <a href="#">平安证券被罚7575万 三亿补偿万福生科股民</a></li>
+					<li>• <a href="#">马云18年前喝止五大汉偷井盖视频走红</a></li>
+					<li>• <a href="#">抄底车:大众SUV降12万/凯越再降至7.89万</a></li>
+					<li>• <a href="#">途观兄弟车即将量产 MG全新SUV动力赶途观</a></li>
+				</ul>
+			</div>
+  	</div>
+  	<div class="ui-row">
+			<div class="ui-col ui-col-12">
+				<div class="ui-slideshow m-b-10" id="slideshow_2">
+					<ul class="data">
+						<li>
+							<a href="#"><img src="../static/img/common/pic_1.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">邓超承认已与孙俪领证结婚</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_2.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">《关云长》观影报告:姜文才是真正主角</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_3.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">奥巴马复活节大秀篮球球技</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_4.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">超值社交手机最低仅需299元</a></h3>
+							<div class="bg"></div>
+						</li>
+						<li class="hide">
+							<a href="#"><img src="../static/img/common/pic_5.jpg" width="405" height="220" alt="" /></a>
+							<h3><a href="#">《关云长》观影报告:姜文才是真正主角</a></h3>
+							<div class="bg"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ui-col ui-col-12">
+				<h2 class="f-w-b f-s-14"><a href="#">安徽望江22岁团委副书记任职造假被撤职</a></h2>
+				<ul class="ui-tlist m-b-10">
+					<li><a href="#">• 曼联宣布新主帅 莫耶斯年薪500万</a></li>
+					<li><a href="#" class="green">• 刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+					<li><a href="#">• 东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+				</ul>
+				<h2 class="f-w-b f-s-14"><a href="#">传陈好卷入刘铁男贪腐案 经纪人已关机</a></h2>
+				<ul class="ui-tlist">
+					<li><a href="#">• 东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+					<li><a href="#">• 张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+					<li><a href="#" class="green">• 刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+				</ul>
+			</div>
+  	</div>
+  	<div class="ui-row">
+  		<div class="ui-mod">
+  			<div class="ui-mod-hd">
+  				<h2 class="tit">模块名称</h2>
+  				<div class="subtit">二级名称</div>
+  				<div class="extra">
+  					<a href="#" class="more">更多»</a>
+  				</div>
+  			</div>
+  			<div class="ui-mod-bd">
+  				<div class="ui-plist">
+  					<ul>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#" id="popup-1">弹层 1</a></h3>
+  							</div>
+  						</li>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#" id="popup-2">弹层 2</a></h3>
+  							</div>
+  						</li>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#">曼联宣布新主帅</a></h3>
+  							</div>
+  						</li>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#">曼联宣布新主帅</a></h3>
+  							</div>
+  						</li>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#">曼联宣布新主帅</a></h3>
+  							</div>
+  						</li>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#">曼联宣布新主帅</a></h3>
+  							</div>
+  						</li>
+  						<li class="ui-figure">
+  							<div class="pic">
+  								<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  							</div>
+  							<div class="cont">
+  								<h3><a href="#">曼联宣布新主帅</a></h3>
+  							</div>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="ft"><span></span></div>
+  		</div>
+  	</div>
+  	<div class="ui-row" style="margin:0 -5px;">
+  		<div class="ui-col ui-col-16" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					<div class="ui-row">
+  						<div class="ui-col ui-col-12">
+  							<ul class="ui-tlist">
+  								<li class="f-w-b">• <a href="#">曼联宣布新主帅 莫耶斯年薪500万</a></li>
+  								<li>• <a href="#">东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+  								<li>• <a href="#">张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+  								<li>• <a href="#">刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+  								<li>• <a href="#">平安证券被罚7575万 三亿补偿万福生科股民</a></li>
+  								<li>• <a href="#">马云18年前喝止五大汉偷井盖视频走红</a></li>
+  								<li>• <a href="#">抄底车:大众SUV降12万/凯越再降至7.89万</a></li>
+  								<li>• <a href="#">途观兄弟车即将量产 MG全新SUV动力赶途观</a></li>
+  								<li>• <a href="#">佳能小型单反100D评测 单反/微单月度排行榜</a></li>
+  								<li>• <a href="#">iPhone上最好的司法考试真题模拟应用</a></li>
+  							</ul>						
+  						</div>
+  						<div class="ui-col ui-col-12">
+  							<ul class="ui-tlist">
+  								<li class="f-w-b">• <a href="#">曼联宣布新主帅 莫耶斯年薪500万</a></li>
+  								<li>• <a href="#">东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+  								<li>• <a href="#">张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+  								<li>• <a href="#">刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+  								<li>• <a href="#">平安证券被罚7575万 三亿补偿万福生科股民</a></li>
+  								<li>• <a href="#">马云18年前喝止五大汉偷井盖视频走红</a></li>
+  								<li>• <a href="#">抄底车:大众SUV降12万/凯越再降至7.89万</a></li>
+  								<li>• <a href="#">途观兄弟车即将量产 MG全新SUV动力赶途观</a></li>
+  								<li>• <a href="#">佳能小型单反100D评测 单反/微单月度排行榜</a></li>
+  								<li>• <a href="#">iPhone上最好的司法考试真题模拟应用</a></li>
+  							</ul>						
+  						</div>
+  					</div>
+  					<div class="ui-pagination">
+  						<a href="#" class="first">首页</a>
+  						<a href="#" class="prev">上一页</a>
+  						<a href="#">1</a>
+  						<a href="#" class="active">2</a>
+  						<a href="#">3</a>
+  						<a href="#">4</a>
+  						<a href="#">5</a>
+  						<a href="#">6</a>
+  						<a href="#">7</a>
+  						<a href="#">8</a>
+  						<a href="#">9</a>
+  						<a href="#">10</a>
+  						<a href="#" class="next">下一页</a>
+  						<a href="#" class="last">尾页</a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					<div class="ui-plist-v t-a-c">
+  						<ul>
+  							<li class="ui-figure">
+  								<div class="pic">
+  									<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  								</div>
+  								<div class="cont">
+  									<h3><a href="#">曼联宣布新主帅</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic">
+  									<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt="" /></a>
+  								</div>
+  								<div class="cont">
+  									<h3><a href="#">曼联宣布新主帅</a></h3>
+  								</div>
+  							</li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="ui-row">
+  		<div class="ui-mod">
+  			<div class="ui-mod-hd">
+  				<h2 class="tit">模块名称</h2>
+  				<div class="extra">
+  					<a href="#" class="more">更多»</a>
+  				</div>
+  			</div>
+  			<div class="ui-mod-bd">
+  				<div class="ui-picslide" id="picslide_1">
+  					<a href="###" class="prev" title="向前"></a>
+  					<div class="pcont ui-plist ui-plist-1" style="width:826px;">
+  						<ul>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了1</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了2</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了3</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了4</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了5</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了6</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了7</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了8</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了9</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了10</a></h3>
+  								</div>
+  							</li>
+  						</ul>
+  					</div>
+  					<a href="###" class="next" title="向后"></a>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-mod">
+  			<div class="ui-mod-hd">
+  				<h2 class="tit">模块名称</h2>
+  				<div class="extra">
+  					<a href="#" class="more">更多»</a>
+  				</div>
+  			</div>
+  			<div class="ui-mod-bd">
+  				<div class="ui-picslide" id="picslide_2">
+  					<a href="#" class="prev" title="向前"></a>
+  					<div class="pcont ui-plist ui-plist-1" style="width:657px;">
+  						<ul>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了1</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了2</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了3</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了4</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了5</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了6</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了7</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure">
+  								<div class="pic"><a href="#"><img src="../static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  								<div class="cont">
+  									<h3><a href="#">爱情我戒了8</a></h3>
+  								</div>
+  							</li>
+  						</ul>
+  					</div>
+  					<a href="#" class="next" title="向后"></a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="ui-row" style="margin:0 -5px;">
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					模块内容
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					模块内容
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					模块内容
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="ui-row" style="margin:0 -5px;">
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					<div class="ui-figure-h">
+  						<div class="pic">
+  							<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  							<h3><a href="#">农夫山泉董事长记者</a></h3>
+  						</div>
+  						<div class="cont f-l">
+  							<ul class="ui-tlist">
+  								<li>• <a href="#">曼联宣布新主帅</a></li>
+  								<li>• <a href="#">东莞警方查涉毒酒店</a></li>
+  								<li>• <a href="#">张柏芝赴台会好友叙旧</a></li>
+  								<li>• <a href="#">刘德华为女儿庆生</a></li>
+  								<li>• <a href="#">平安证券被罚7575万</a></li>
+  							</ul>							
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod hot-news">
+  				<div class="ui-mod-hd">
+  					<div class="ui-tab">
+  						<ul>
+  							<li class="active"><a href="#">新闻</a></li>
+  							<li><a href="#">图片</a></li>
+  							<li><a href="#">军事</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					<div class="view">
+  						<ul class="ui-tlist">
+  							<li>• <a href="#">曼联宣布新主帅 莫耶斯年薪500万</a></li>
+  							<li>• <a href="#">东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+  							<li>• <a href="#">张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+  							<li>• <a href="#">刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+  							<li>• <a href="#">平安证券被罚7575万 三亿补偿万福生科股民</a></li>
+  							<li>• <a href="#">马云18年前喝止五大汉偷井盖视频走红</a></li>
+  							<li>• <a href="#">抄底车:大众SUV降12万/凯越再降至7.89万</a></li>
+  							<li>• <a href="#">途观兄弟车即将量产 MG全新SUV动力赶途观</a></li>
+  							<li>• <a href="#">佳能小型单反100D评测 单反/微单月度排行榜</a></li>
+  							<li>• <a href="#">iPhone上最好的司法考试真题模拟应用</a></li>
+  						</ul>
+  					</div>
+  					<div class="view hide">
+  						<ul class="ui-tlist">
+  							<li>• <a href="#">曼联宣布新主帅 莫耶斯年薪500万</a></li>
+  							<li>• <a href="#">东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+  							<li>• <a href="#">张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+  							<li>• <a href="#">刘德华为女儿庆生</a> <a href="#">黄安22岁女儿未婚先孕</a></li>
+  							<li>• <a href="#">平安证券被罚7575万 三亿补偿万福生科股民</a></li>
+  							<li>• <a href="#">马云18年前喝止五大汉偷井盖视频走红</a></li>
+  							<li>• <a href="#">抄底车:大众SUV降12万/凯越再降至7.89万</a></li>
+  						</ul>
+  					</div>
+  					<div class="view hide">
+  						<ul class="ui-tlist">
+  							<li>• <a href="#">曼联宣布新主帅 莫耶斯年薪500万</a></li>
+  							<li>• <a href="#">东莞警方查涉毒酒店 持冲锋枪扣押2000人</a></li>
+  							<li>• <a href="#">张柏芝赴台会好友叙旧 携子看片被逐</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-col ui-col-8" style="padding:0 5px;">
+  			<div class="ui-mod pick-news">
+  				<div class="ui-mod-bd">
+  					<div class="ui-tab">
+  						<ul>
+  							<li class="active"><a href="#">新闻</a></li>
+  							<li><a href="#">图片</a></li>
+  							<li><a href="#">军事</a></li>
+  						</ul>
+  					</div>
+  					<div class="view">
+  						<div class="ui-plist-v">
+  							<ul>
+  								<li class="ui-figure-h">
+  									<div class="pic">
+  										<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  									</div>
+  									<div class="cont f-l">
+  										<h3 class="f-w-b"><a href="#">曼联宣布新主帅</a></h3>
+  										<p>莫耶斯年薪500万</p>
+  										<div class="ui-rating"><span class="bar" style="width:80%;"></span></div>
+  									</div>
+  								</li>
+  								<li class="ui-figure-h">
+  									<div class="pic">
+  										<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  									</div>
+  									<div class="cont f-l">
+  										<h3 class="f-w-b"><a href="#">曼联宣布新主帅</a></h3>
+  										<p>莫耶斯年薪500万</p>
+  										<div class="ui-rating"><span class="bar" style="width:40%;"></span></div>
+  									</div>
+  								</li>
+  							</ul>
+  						</div>
+  					</div>
+  					<div class="view hide">
+  						<div class="ui-plist">
+  							<ul>
+  								<li class="ui-figure">
+  									<div class="pic">
+  										<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  									</div>
+  									<div class="cont">
+  										<h3><a href="#">曼联宣布新主帅</a></h3>
+  									</div>
+  								</li>
+  								<li class="ui-figure">
+  									<div class="pic">
+  										<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  									</div>
+  									<div class="cont">
+  										<h3><a href="#">曼联宣布新主帅</a></h3>
+  									</div>
+  								</li>
+  								<li class="ui-figure">
+  									<div class="pic">
+  										<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  									</div>
+  									<div class="cont">
+  										<h3><a href="#">曼联宣布新主帅</a></h3>
+  									</div>
+  								</li>
+  								<li class="ui-figure">
+  									<div class="pic">
+  										<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="90" alt="" /></a>
+  									</div>
+  									<div class="cont">
+  										<h3><a href="#">曼联宣布新主帅</a></h3>
+  									</div>
+  								</li>
+  							</ul>
+  						</div>
+  					</div>
+  					<div class="view hide">
+  						<ul class="ui-tlist">
+  							<li>• <a href="#">曼联宣布新主帅</a></li>
+  							<li>• <a href="#">东莞警方查涉毒酒店</a></li>
+  							<li>• <a href="#">张柏芝赴台会好友叙旧</a></li>
+  							<li>• <a href="#">刘德华为女儿庆生</a></li>
+  							<li>• <a href="#">平安证券被罚7575万</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="ui-row" style="margin:0 -5px;">
+  		<div class="ui-col ui-col-12" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">模块名称</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					<div class="ui-plist">
+  						<ul>
+  							<li class="ui-figure-h" style="width:230px;">
+  								<div class="pic" id="load_pic">
+  									<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt=""></a>
+  								</div>
+  								<div class="cont">
+  									<h3><a href="#">曼联宣布新主帅</a></h3>
+  								</div>
+  							</li>
+  							<li class="ui-figure-h" style="width:230px;">
+  								<div class="pic">
+  									<a href="#"><img src="../static/img/common/cat.jpg" width="130" height="108" alt=""></a>
+  								</div>
+  								<div class="cont">
+  									<h3><a href="#">曼联宣布新主帅</a></h3>
+  								</div>
+  							</li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ui-col ui-col-12" style="padding:0 5px;">
+  			<div class="ui-mod">
+  				<div class="ui-mod-hd">
+  					<h2 class="tit">分享</h2>
+  					<div class="extra">
+  						<a href="#" class="more">更多»</a>
+  					</div>
+  				</div>
+  				<div class="ui-mod-bd">
+  					<ul class="ui-tlist" id="share"></ul>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+    <div class="ui-row">
+      <div class="ui-row m-b-10">
+        <div class="ui-col ui-col-4" style="background:#999;height:50px;">col-4</div>
+        <div class="ui-col ui-col-20" style="background:#ccc;height:50px;">col-20</div>
+      </div>
+      <div class="ui-row m-b-10">
+        <div class="ui-col ui-col-6" style="background:#999;height:50px;">col-6</div>
+        <div class="ui-col ui-col-6" style="background:#ccc;height:50px;">col-6</div>
+        <div class="ui-col ui-col-6" style="background:#999;height:50px;">col-6</div>
+        <div class="ui-col ui-col-6" style="background:#ccc;height:50px;">col-6</div>
+      </div>
+      <div class="ui-row m-b-10">
+        <div class="ui-col ui-col-8" style="background:#999;height:50px;">col-8</div>
+        <div class="ui-col ui-col-8" style="background:#ccc;height:50px;">col-8</div>
+        <div class="ui-col ui-col-8" style="background:#999;height:50px;">col-8</div>
+      </div>
+      <div class="ui-row m-b-10">
+        <div class="ui-col ui-col-8" style="background:#999;height:50px;">col-8</div>
+        <div class="ui-col ui-col-16" style="background:#ddd;height:50px;">col-16</div>
+      </div>
+      <div class="ui-row m-b-10">
+        <div class="ui-col ui-col-12" style="background:#999;height:50px;">col-12</div>
+        <div class="ui-col ui-col-12" style="background:#ddd;height:50px;">col-12</div>
+      </div>
+    </div>  
+  	<div class="ui-row">
+  		<div class="ui-mod">
+  			<div class="ui-mod-hd">
+  				<h2 class="tit">表单</h2>
+  				<div class="extra">
+  					<a href="#" class="more">更多»</a>
+  				</div>
+  			</div>
+  			<div class="ui-mod-bd">
+          <form class="ui-form">
+            <div class="ui-form-item">
+              <label class="ui-form-label">姓名：</label>
+              <div class="ui-form-cont">
+                <input type="text" class="ui-input" /> <span>提示提示提示</span>
+              </div>
+            </div>
+            <div class="ui-form-item">
+              <label class="ui-form-label">性别：</label>
+              <div class="ui-form-cont">
+                <input type="radio" id="radio_male" name="sex" /> <label for="radio_male">男</label>&nbsp;&nbsp;
+                <input type="radio" id="radio_female" name="sex" /> <label for="radio_female">女</label>&nbsp;&nbsp;
+                <input type="radio" id="radio_secret" name="sex" checked="checked" /> <label for="radio_secret">保密</label>
+              </div>
+            </div>
+            <div class="ui-form-item">
+              <label class="ui-form-label">年龄：</label>
+              <div class="ui-form-cont">
+                <select class="ui-select">
+                  <option>- 请选择 -</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                </select>
+              </div>
+            </div>
+            <div class="ui-form-item">
+              <label class="ui-form-label">邮箱：</label>
+              <div class="ui-form-cont">
+                <input type="text" class="ui-input ui-input-error" /> <span class="ui-red">错误提示</span>
+              </div>
+            </div>
+            <div class="ui-form-item">
+              <label class="ui-form-label">兴趣：</label>
+              <div class="ui-form-cont">
+                <input type="checkbox" id="cbox_1" /> <label for="cbox_1">文学</label>&nbsp;&nbsp;
+                <input type="checkbox" id="cbox_2" /> <label for="cbox_2">电影</label>&nbsp;&nbsp;
+                <input type="checkbox" id="cbox_3" /> <label for="cbox_3">天文</label>&nbsp;&nbsp;
+              </div>
+            </div>
+            <div class="ui-form-item">
+              <label class="ui-form-label">留言：</label>
+              <div class="ui-form-cont">
+                <textarea class="ui-textarea" style="width:400px;height:150px;"></textarea>
+              </div>
+            </div>
+            <div class="ui-form-item">
+              <label class="ui-form-label"></label>
+              <div class="ui-form-cont">
+                <input type="button" class="ui-btn" value="确定" /> <input type="button" class="ui-btn" value="取消" />
+              </div>
+            </div>
+          </form>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <div id="doc-ft" class="t-a-c">
+  	&copy; 2013-2019 Tom Template
+  </div>
+  <script type="text/tpl" id="layer-1" style="display:none;">
+  	<p>Layer 1</p>
+  	<p><a href="#" id="popup-3">弹层 3</a></p>
+  </script>
+  <script type="text/tpl" id="layer-2" style="display:none;">
+  	<p>Layer 2</p>
+  </script>
+  <script type="text/tpl" id="layer-3" style="display:none;">
+  	<p>Layer 3</p>
+  	<p><img src="../static/img/product/pic10.jpg" /></p>
+  </script>
+  <script src="../static/js/common/require.js"></script>
+  <script src="../static/js/common/popup.js"></script>
+  <script src="../static/js/example/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="zh-cn"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="zh-cn"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh-cn"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh-cn"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>基础 - Tom Template</title>
+  <link rel="stylesheet" href="./static/css/common/reset.css" />
+  <link rel="stylesheet" href="./static/css/docs/grid.css" />
+  <link rel="stylesheet" href="./static/css/common/component.css" />
+  <link rel="stylesheet" href="./static/js/prettify/prettify.css" />
+  <link rel="stylesheet" href="./static/css/docs/common.css" />
+</head>
+<body>
+  <div id="doc-hd">
+  	<a href="index.html"><img src="./static/img/docs/logo.png" width="165" height="120" class="logo" alt="Tom Template" /></a>
+  	<h1>Tom Template<em>基础模板框架</em></h1>
+  	<div class="tom-pri-nav">
+  		<ul>
+        <li><a href="./index.html">首页</a></li>
+        <li class="active"><a href="./basic.html">基础</a></li>
+        <li><a href="./component.html">组件</a></li>
+        <li><a href="./animation.html">动画</a></li>
+        <li><a href="./example/index.html" target="_blank">演示</a></li>
+        <li><a href="https://github.com/ztl/tomtemplate/" target="_blank">下载</a></li>
+      </ul>
+  	</div>
+  </div>
+  <div id="doc-bd">
+  	<div class="grid-2c1">
+  		<div class="col-1">
+
+  			<div class="tom-content">
+  				<h1>基础</h1>
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_html">HTML文档结构 <em>HTML</em></h2>
+  					<p class="tom-desc">基本 HTML 文档结构。</p>
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;!--[if lt IE 7 ]&gt;&lt;html class="ie6" lang="zh-cn"&gt;&lt;![endif]--&gt;
+  &lt;!--[if IE 7 ]&gt;&lt;html class="ie7" lang="zh-cn"&gt;&lt;![endif]--&gt;
+  &lt;!--[if IE 8 ]&gt;&lt;html class="ie8" lang="zh-cn"&gt;&lt;![endif]--&gt;
+  &lt;!--[if IE 9 ]&gt;&lt;html class="ie9" lang="zh-cn"&gt;&lt;![endif]--&gt;
+  &lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;&lt;html lang="zh-cn"&gt;&lt;!--&lt;![endif]--&gt;
+  &lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title&gt;Tom Template&lt;/title&gt;
+  &lt;link rel="stylesheet" href="./static/css/common/reset.css" /&gt;
+  &lt;link rel="stylesheet" href="./static/css/common/component.css" /&gt;
+  &lt;link rel="stylesheet" href="./static/css/project/common.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div id="doc-hd"&gt;
+  	头部
+  &lt;/div&gt;
+  &lt;div id="doc-bd"&gt;
+  	主体
+  &lt;/div&gt;
+  &lt;div id="doc-ft"&gt;
+  	尾部
+  &lt;/div&gt;
+  &lt;script src="./static/js/common/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="./static/js/project/common.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_reset">样式重设 <em>Reset</em></h2>
+  					<p class="tom-desc">样式重设 reset.css。</p>
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  html{background:#fff;color:#000;}
+  body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+  body{font:12px/1.5 arial,SimSun,georgia,verdana,helvetica,sans-serif;}
+  body{background:#fff;color:#000;}
+  ul,ol,menu{list-style:none;}
+  fieldset,img{border:none;}
+  img,object,select,input,textarea,button{outline:0;vertical-align:middle;}
+  button{border:none;cursor:pointer;}
+  table{border-collapse:collapse;border-spacing:0;}
+  article,aside,footer,header,section,nav,menu,figure,figcaption,hgroup,details{display:block;}
+  address,caption,cite,code,dfn,em,strong,th,var,i,b,small,abbr{font-style:normal;font-weight:normal;}
+  caption,th{text-align:left;}
+  h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+  q:before,q:after{content:'';}
+  abbr,acronym{border:0;font-variant:normal;}
+  sup{vertical-align:text-top;}
+  sub{vertical-align:text-bottom;}
+  input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%;}
+  legend{color:#000;}
+  a{text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  ::selection{background-color:#39f;color:#fff;}
+  ::-moz-selection{background-color:#39f;color:#fff;}
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_grid">栅格化 <em>Grid</em></h2>
+  					<p class="tom-desc">
+  						24 栅格系统。<br />
+  						class="ui-row" 是一个行。
+  					</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-row m-b-10">
+  	<div class="ui-col ui-col-4" style="background:#999;height:50px;">col-4</div>
+  	<div class="ui-col ui-col-20" style="background:#ccc;height:50px;">col-20</div>
+  </div>
+  <div class="ui-row m-b-10">
+  	<div class="ui-col ui-col-6" style="background:#999;height:50px;">col-6</div>
+  	<div class="ui-col ui-col-6" style="background:#ccc;height:50px;">col-6</div>
+  	<div class="ui-col ui-col-6" style="background:#999;height:50px;">col-6</div>
+  	<div class="ui-col ui-col-6" style="background:#ccc;height:50px;">col-6</div>
+  </div>
+  <div class="ui-row m-b-10">
+  	<div class="ui-col ui-col-8" style="background:#999;height:50px;">col-8</div>
+  	<div class="ui-col ui-col-8" style="background:#ccc;height:50px;">col-8</div>
+  	<div class="ui-col ui-col-8" style="background:#999;height:50px;">col-8</div>
+  </div>
+  <div class="ui-row m-b-10">
+  	<div class="ui-col ui-col-8" style="background:#999;height:50px;">col-8</div>
+  	<div class="ui-col ui-col-16" style="background:#ddd;height:50px;">col-16</div>
+  </div>
+  <div class="ui-row m-b-10">
+  	<div class="ui-col ui-col-12" style="background:#999;height:50px;">col-12</div>
+  	<div class="ui-col ui-col-12" style="background:#ddd;height:50px;">col-12</div>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="ui-row m-b-10"&gt;
+    &lt;div class="ui-col ui-col-4" style="background:#999;height:50px;"&gt;col-4&lt;/div&gt;
+    &lt;div class="ui-col ui-col-20" style="background:#ccc;height:50px;"&gt;col-20&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="ui-row m-b-10"&gt;
+    &lt;div class="ui-col ui-col-6" style="background:#999;height:50px;"&gt;col-6&lt;/div&gt;
+    &lt;div class="ui-col ui-col-6" style="background:#ccc;height:50px;"&gt;col-6&lt;/div&gt;
+    &lt;div class="ui-col ui-col-6" style="background:#999;height:50px;"&gt;col-6&lt;/div&gt;
+    &lt;div class="ui-col ui-col-6" style="background:#ccc;height:50px;"&gt;col-6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="ui-row m-b-10"&gt;
+    &lt;div class="ui-col ui-col-8" style="background:#999;height:50px;"&gt;col-8&lt;/div&gt;
+    &lt;div class="ui-col ui-col-8" style="background:#ccc;height:50px;"&gt;col-8&lt;/div&gt;
+    &lt;div class="ui-col ui-col-8" style="background:#999;height:50px;"&gt;col-8&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="ui-row m-b-10"&gt;
+    &lt;div class="ui-col ui-col-8" style="background:#999;height:50px;"&gt;col-8&lt;/div&gt;
+    &lt;div class="ui-col ui-col-16" style="background:#ddd;height:50px;"&gt;col-16&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="ui-row m-b-10"&gt;
+    &lt;div class="ui-col ui-col-12" style="background:#999;height:50px;"&gt;col-12&lt;/div&gt;
+    &lt;div class="ui-col ui-col-12" style="background:#ddd;height:50px;"&gt;col-12&lt;/div&gt;
+  &lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_common">公共样式 <em>Common</em></h2>
+  					<p class="tom-desc">公共样式，放在了 component.css 中。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="show">显示内容</div>
+  <div class="hide">隐藏内容</div>
+  <div class="f-l">左浮动</div>
+  <div class="f-r">右浮动</div>
+  <div class="c-b">清除之前元素浮动</div>
+  <div class="clearfix">清除内部元素浮动</div>
+  <div class="v-a-m">垂直居中</div>
+  <div class="f-w-b">文字粗体</div>
+  <div class="f-w-n">文字默认字体</div>
+  <div class="ui-black">文字黑色</div>
+  <div class="ui-gray">文字灰色</div>
+  <div class="ui-green">文字绿色</div>
+  <div class="ui-orange">文字橙色</div>
+  <div class="ui-red">文字红色</div>
+  <div class="t-a-l">文字左对齐</div>
+  <div class="t-a-c">文字居中</div>
+  <div class="t-a-r">文字右对齐</div>
+  <div class="t-d-u">文字下划线</div>
+  <div class="f-s-12">文字 12px</div>
+  <div class="f-s-14">文字 14px</div>
+  <div class="m-b-10">距离下边元素 10px</div>
+  <div class="m-b-20">距离下边元素 20px</div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="show"&gt;显示内容&lt;/div&gt;
+  &lt;div class="hide"&gt;隐藏内容&lt;/div&gt;
+  &lt;div class="f-l"&gt;左浮动&lt;/div&gt;
+  &lt;div class="f-r"&gt;右浮动&lt;/div&gt;
+  &lt;div class="c-b"&gt;清除之前元素浮动&lt;/div&gt;
+  &lt;div class="clearfix"&gt;清除内部元素浮动&lt;/div&gt;
+  &lt;div class="v-a-m"&gt;垂直居中&lt;/div&gt;
+  &lt;div class="f-w-b"&gt;文字粗体&lt;/div&gt;
+  &lt;div class="f-w-n"&gt;文字默认字体&lt;/div&gt;
+  &lt;div class="ui-black"&gt;文字黑色&lt;/div&gt;
+  &lt;div class="ui-gray"&gt;文字灰色&lt;/div&gt;
+  &lt;div class="ui-green"&gt;文字绿色&lt;/div&gt;
+  &lt;div class="ui-orange"&gt;文字橙色&lt;/div&gt;
+  &lt;div class="ui-red"&gt;文字红色&lt;/div&gt;
+  &lt;div class="t-a-l"&gt;文字左对齐&lt;/div&gt;
+  &lt;div class="t-a-c"&gt;文字居中&lt;/div&gt;
+  &lt;div class="t-a-r"&gt;文字右对齐&lt;/div&gt;
+  &lt;div class="t-d-u"&gt;文字下划线&lt;/div&gt;
+  &lt;div class="f-s-12"&gt;文字 12px&lt;/div&gt;
+  &lt;div class="f-s-14"&gt;文字 14px&lt;/div&gt;
+  &lt;div class="m-b-10"&gt;距离下边元素 10px&lt;/div&gt;
+  &lt;div class="m-b-20"&gt;距离下边元素 20px&lt;/div&gt;
+  					</pre>
+  				</div><!--end item-->
+
+  			</div>
+  		</div>
+  		<div class="col-2">
+  			<ul class="sidebar">
+  				<li><a href="#anchor_html"><em>HTML</em>HTML文档结构</a></li>
+  				<li><a href="#anchor_reset"><em>Reset</em>样式重设</a></li>
+  				<li><a href="#anchor_grid"><em>Grid</em>栅格化</a></li>
+  				<li><a href="#anchor_common"><em>Common</em>公共样式</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <div id="doc-ft">
+  	&copy; 2013-2019 Tom Template
+  </div>
+  <a href="#" class="back-to-top" title="返回顶部"></a>
+  <script src="./static/js/common/require.js" data-main="./static/js/docs/common.js"></script>
+  <script src="./static/js/prettify/prettify.js"></script>
+</body>
+</html>

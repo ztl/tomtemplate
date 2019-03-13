@@ -1,0 +1,54 @@
+/* layout */
+#doc-hd,
+#doc-bd,
+#doc-ft{width:1200px;margin:0 auto;}
+
+/* header */
+#doc-hd{height:190px;position:relative;}
+#doc-hd .logo{float:left;margin:10px 0 10px 760px;}
+#doc-hd h1{font:36px/40px "Tahoma";float:left;margin:40px 0 0 20px;color:#693;text-align:center;}
+#doc-hd h1 em{display:block;font-family:"SimHei";color:#999;}
+#doc-hd .top-share{width:80px;position:absolute;right:20px;top:10px;}
+#doc-hd .top-share p{cursor:pointer;text-align:right;padding-bottom:3px;}
+#doc-hd .top-share ul{background:#f9f9f9;border:1px solid #693;_zoom:1;}
+#doc-hd .top-share li{border-right:1px solid #693;border-bottom:1px solid #693;padding:2px 0 2px 5px;}
+
+/* footer */
+#doc-ft{text-align:center;padding:20px 0;}
+
+/* 返回顶部 */
+.back-to-top{width:0;height:0;position:fixed;left:50%;bottom:40px;margin-left:610px;overflow:hidden;
+  border:20px solid #693;border-top-color:#fff;border-right-color:#fff;border-left-color:#fff;
+}
+
+/* common */
+a{color:#000;}
+a:hover{color:#f00;}
+
+/* float */
+.tom-demo:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.tom-demo{clear:both;zoom:1;}
+
+/* primary nav */
+.tom-pri-nav{background:#693;height:40px;line-height:40px;font-size:16px;clear:both;margin-bottom:10px;}
+.tom-pri-nav li{float:left;}
+.tom-pri-nav a{color:#fff;margin:0 15px;height:28px;line-height:28px;float:left;padding-top:6px;}
+.tom-pri-nav a:hover,
+.tom-pri-nav .active a{color:#fff;border-bottom:2px solid #fff;text-decoration:none;}
+
+/* sidebar */
+.sidebar{border:1px solid #693;border-right-width:2px;font-size:14px;font-weight:bold;}
+.sidebar a{background:#fff;color:#693;height:30px;line-height:30px;border-bottom:1px solid #693;display:block;padding:0 10px;}
+.sidebar a:hover,
+.sidebar .active a{background:#f0f0f0;color:#693;text-decoration:none;}
+.sidebar a em{float:right;color:#666;}
+.sidebar-fixed{width:207px;position:fixed;top:10px;}
+
+/* 正文 */
+.tom-content h1{text-align:center;font-size:26px;font-weight:bold;color:#666;border-bottom:1px dotted #ccc;}
+.tom-item{border-bottom:2px dashed #ccc;padding:30px 0;}
+.tom-tit{color:#693;font-weight:bold;font-size:20px;padding-bottom:10px;}
+.tom-tit em{color:#666;font-size:16px;}
+.tom-subtit{padding-bottom:10px;font-style:italic;}
+.tom-desc{padding-bottom:20px;font-size:14px;}
+.tom-demo{margin-bottom:10px;}

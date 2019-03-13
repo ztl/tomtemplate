@@ -1,0 +1,10 @@
+/* pic slide */
+.ui-picslide{height:145px;}
+.ui-picslide .prev,
+.ui-picslide .next{background:url(../../img/component/btn_picslide.png) no-repeat;width:17px;height:30px;float:left;margin-top:50px;}
+.ui-picslide .prev{margin-right:15px;}
+.ui-picslide .prev:hover{background-position:0 -96px;}
+.ui-picslide .next{background-position:0 -32px;float:right;}
+.ui-picslide .next:hover{background-position:0 -64px;}
+.ui-picslide .pcont{height:148px;float:left;overflow:hidden;position:relative;}
+.ui-picslide .pcont ul{width:9999px;position:absolute;left:0;top:0;}

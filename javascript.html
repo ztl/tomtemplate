@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="zh-cn"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="zh-cn"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh-cn"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh-cn"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>JavaScript组件 - Tom Template</title>
+  <link rel="stylesheet" href="./static/css/common/reset.css" />
+  <link rel="stylesheet" href="./static/css/docs/grid.css" />
+  <link rel="stylesheet" href="./static/css/common/component.css" />
+  <link rel="stylesheet" href="./static/css/component/slideshow.css" />
+  <link rel="stylesheet" href="./static/css/component/picslide.css" />
+  <link rel="stylesheet" href="./static/css/component/popup.css" />
+  <link rel="stylesheet" href="./static/js/prettify/prettify.css" />
+  <link rel="stylesheet" href="./static/css/docs/common.css" />
+  <link rel="stylesheet" href="./static/css/docs/javascript.css" />
+</head>
+<body>
+  <div id="doc-hd">
+  	<a href="index.html"><img src="./static/img/docs/logo.png" width="165" height="120" class="logo" alt="Tom Template" /></a>
+  	<h1>Tom Template<em>基础模板框架</em></h1>
+  	<div class="tom-pri-nav">
+  		<ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./basic.html">基础</a></li>
+        <li><a href="./component.html">组件</a></li>
+        <li><a href="./animation.html">动画</a></li>
+        <li><a href="./example/index.html" target="_blank">演示</a></li>
+        <li><a href="https://github.com/ztl/tomtemplate/" target="_blank">下载</a></li>
+      </ul>
+  	</div>
+  </div>
+  <div id="doc-bd">
+  	<div class="grid-2c1">
+  		<div class="col-1">
+
+  			<div class="tom-content">
+  				<h1>JavaScript组件</h1>
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_slideshow">幻灯片播放 <em>SlideShow</em></h2>
+  					<p class="tom-desc">lazyTime 可设置播放时间。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+
+  <div class="ui-slideshow" id="slideshow_1">
+  	<ul class="data">
+  		<li>
+  			<a href="#"><img src="./static/img/common/pic_1.jpg" width="405" height="220" alt="" /></a>
+  			<h3><a href="#">邓超承认已与孙俪领证结婚</a></h3>
+  			<div class="bg"></div>
+  		</li>
+  		<li class="hide">
+  			<a href="#"><img src="./static/img/common/pic_2.jpg" width="405" height="220" alt="" /></a>
+  			<h3><a href="#">《关云长》观影报告:姜文才是真正主角</a></h3>
+  			<div class="bg"></div>
+  		</li>
+  		<li class="hide">
+  			<a href="#"><img src="./static/img/common/pic_3.jpg" width="405" height="220" alt="" /></a>
+  			<h3><a href="#">奥巴马复活节大秀篮球球技</a></h3>
+  			<div class="bg"></div>
+  		</li>
+  		<li class="hide">
+  			<a href="#"><img src="./static/img/common/pic_4.jpg" width="405" height="220" alt="" /></a>
+  			<h3><a href="#">超值社交手机最低仅需299元</a></h3>
+  			<div class="bg"></div>
+  		</li>
+  	</ul>
+  </div>
+
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;link rel="stylesheet" href="./static/css/ui/slideshow.css" /&gt;
+
+  &lt;div class="ui-slideshow" id="slideshow_1"&gt;
+  	&lt;ul class="data"&gt;
+  		&lt;li&gt;
+  			&lt;a href="#"&gt;&lt;img src="./static/img/common/pic_1.jpg" width="405" height="220" alt="" /&gt;&lt;/a&gt;
+  			&lt;h3&gt;&lt;a href="#"&gt;邓超承认已与孙俪领证结婚&lt;/a&gt;&lt;/h3&gt;
+  			&lt;div class="bg"&gt;&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="hide"&gt;
+  			&lt;a href="#"&gt;&lt;img src="./static/img/common/pic_2.jpg" width="405" height="220" alt="" /&gt;&lt;/a&gt;
+  			&lt;h3&gt;&lt;a href="#"&gt;《关云长》观影报告:姜文才是真正主角&lt;/a&gt;&lt;/h3&gt;
+  			&lt;div class="bg"&gt;&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="hide"&gt;
+  			&lt;a href="#"&gt;&lt;img src="./static/img/common/pic_3.jpg" width="405" height="220" alt="" /&gt;&lt;/a&gt;
+  			&lt;h3&gt;&lt;a href="#"&gt;奥巴马复活节大秀篮球球技&lt;/a&gt;&lt;/h3&gt;
+  			&lt;div class="bg"&gt;&lt;/div&gt;
+  		&lt;/li&gt;
+  		&lt;li class="hide"&gt;
+  			&lt;a href="#"&gt;&lt;img src="./static/img/common/pic_4.jpg" width="405" height="220" alt="" /&gt;&lt;/a&gt;
+  			&lt;h3&gt;&lt;a href="#"&gt;超值社交手机最低仅需299元&lt;/a&gt;&lt;/h3&gt;
+  			&lt;div class="bg"&gt;&lt;/div&gt;
+  		&lt;/li&gt;
+  	&lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;script src="./static/js/common/require.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  require.config({
+  	baseUrl: '.././static/js',
+  	paths: {
+  		'jquery'	: 'common/jquery-1.8.3.min',
+  		'SlideShow'	: 'common/slideshow'
+  	}
+  });
+
+  require(['jquery', 'SlideShow'], function($, SlideShow) {
+
+  	// Slide Show
+  	SlideShow('slideshow_1', {
+  		lazyTime: 1000
+  	});
+
+  });
+  &lt;/script&gt;
+  					</pre>
+  				
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_picslide">图片滚动 <em>PicSlide</em></h2>
+  					<p class="tom-desc">图片滚动。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="ui-picslide" id="picslide-1">
+  	<a href="#" class="prev" title="向前"></a>
+  	<div class="pcont ui-plist">
+  		<ul>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了1</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了2</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了3</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了4</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了5</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了6</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了7</a></h3>
+  				</div>
+  			</li>
+  			<li class="ui-figure">
+  				<div class="pic"><a href="#"><img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /></a></div>
+  				<div class="cont">
+  					<h3><a href="#">爱情我戒了8</a></h3>
+  				</div>
+  			</li>
+  		</ul>
+  	</div>
+  	<a href="#" class="next" title="向后"></a>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;link rel="stylesheet" href="./static/css/ui/picslide.css" /&gt;
+
+  &lt;div class="ui-picslide" id="picslide-1"&gt;
+  	&lt;a href="#" class="prev" title="向前"&gt;&lt;/a&gt;
+  	&lt;div class="pcont ui-plist"&gt;
+  		&lt;ul&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了1&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了2&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了3&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了4&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了5&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了6&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了7&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  			&lt;li class="ui-figure"&gt;
+  				&lt;div class="pic"&gt;&lt;a href="#"&gt;&lt;img src="./static/img/common/cat.jpg" width="150" height="100" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+  				&lt;div class="cont"&gt;
+  					&lt;h3&gt;&lt;a href="#"&gt;爱情我戒了8&lt;/a&gt;&lt;/h3&gt;
+  				&lt;/div&gt;
+  			&lt;/li&gt;
+  		&lt;/ul&gt;
+  	&lt;/div&gt;
+  	&lt;a href="#" class="next" title="向后"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;script src="./static/js/common/require.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  require.config({
+  	baseUrl: '.././static/js',
+  	paths: {
+  		'jquery'	: 'common/jquery-1.8.3.min',
+  		'PicSlide'	: 'common/picslide'
+  	}
+  });
+
+  require(['jquery', 'PicSlide'], function($, PicSlide) {
+
+  	// 图片滚动
+  	PicSlide('picslide-1', 4);
+
+  });
+  &lt;/script&gt;
+  					</pre>
+  				
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_tab">标签切换 <em>Tab</em></h2>
+  					<p class="tom-desc">默认为鼠标点击，可选鼠标经过（mouseenter）。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="md" id="tabview">
+  	<div class="md-bd">
+  		<div class="ui-tab">
+  			<ul>
+  				<li class="active"><a href="#">新闻</a></li>
+  				<li><a href="#">图片</a></li>
+  				<li><a href="#">军事</a></li>
+  			</ul>
+  		</div>
+  		<div class="view">
+  			<div class="ui-plist-v">
+  				<ul>
+  					<li class="ui-figure-h">
+  						<div class="pic">
+  							<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="90" alt=""></a>
+  						</div>
+  						<div class="cont f-l">
+  							<h3 class="f-w-b"><a href="#">曼联宣布新主帅</a></h3>
+  							<p>莫耶斯年薪500万</p>
+  							<div class="ui-rating"><span style="width:80%;"></span></div>
+  						</div>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="view hide">
+  			<div class="ui-plist">
+  				<ul>
+  					<li class="ui-figure">
+  						<div class="pic">
+  							<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="90" alt=""></a>
+  						</div>
+  						<div class="cont">
+  							<h3><a href="#">曼联宣布新主帅</a></h3>
+  						</div>
+  					</li>
+  					<li class="ui-figure">
+  						<div class="pic">
+  							<a href="#"><img src="./static/img/common/cat.jpg" width="130" height="90" alt=""></a>
+  						</div>
+  						<div class="cont">
+  							<h3><a href="#">曼联宣布新主帅</a></h3>
+  						</div>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="view hide">
+  			<ul class="ui-tlist">
+  				<li>• <a href="#">曼联宣布新主帅</a></li>
+  				<li>• <a href="#">东莞警方查涉毒酒店</a></li>
+  				<li>• <a href="#">张柏芝赴台会好友叙旧</a></li>
+  				<li>• <a href="#">刘德华为女儿庆生</a></li>
+  				<li>• <a href="#">平安证券被罚7575万</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;div class="md" id="tabview"&gt;
+  	&lt;div class="md-bd"&gt;
+  		&lt;div class="ui-tab"&gt;
+  			&lt;ul&gt;
+  				&lt;li class="active"&gt;&lt;a href="#"&gt;新闻&lt;/a&gt;&lt;/li&gt;
+  				&lt;li&gt;&lt;a href="#"&gt;图片&lt;/a&gt;&lt;/li&gt;
+  				&lt;li&gt;&lt;a href="#"&gt;军事&lt;/a&gt;&lt;/li&gt;
+  			&lt;/ul&gt;
+  		&lt;/div&gt;
+  		&lt;div class="view"&gt;
+  			省略区块1
+  		&lt;/div&gt;
+  		&lt;div class="view hide"&gt;
+  			省略区块2
+  		&lt;/div&gt;
+  		&lt;div class="view hide"&gt;
+  			省略区块3
+  		&lt;/div&gt;
+  	&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script src="./static/js/common/require.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  require.config({
+  	baseUrl: '.././static/js',
+  	paths: {
+  		'jquery'	: 'common/jquery-1.8.3.min',
+  		'Tab'		: 'common/tab'
+  	}
+  });
+
+  require(['jquery', 'Tab'], function($, Tab) {
+
+  	// Tab切换
+  	Tab('#tabview .ui-tab li', '#tabview .view', {
+  		'trigger': 'mouseenter'
+  	});
+
+  });
+  &lt;/script&gt;
+  					</pre>
+  				
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_share">分享 <em>Share</em></h2>
+  					<p class="tom-desc">参数中可改变输出顺序。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <ul class="ui-tlist" id="share"></ul>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;ul class="ui-tlist" id="share"&gt;&lt;/ul&gt;
+
+  &lt;script src="./static/js/common/require.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  require.config({
+  	baseUrl: '.././static/js',
+  	paths: {
+  		'jquery'	: 'common/jquery-1.8.3.min',
+  		'Share'		: 'common/share'
+  	}
+  });
+
+  require(['jquery', 'Share'], function($, Share) {
+
+  	// 分享
+  	Share('#share', ['douban', 'renren', 'weibo', 'qzone']);
+
+  });
+  &lt;/script&gt;
+  					</pre>
+  				
+  				</div><!--end item-->
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_popup">弹层 <em>Popup</em></h2>
+  					<p class="tom-desc">弹层。</p>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <a href="#" id="popup-1">弹层 1</a>
+  <a href="#" id="popup-2">弹层 2</a>
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  &lt;link rel="stylesheet" href="./static/css/ui/popup.css" /&gt;
+
+  &lt;script type="text/tpl" id="layer-1" style="display:none;"&gt;
+  	&lt;h2&gt;标题&lt;/h2&gt;
+  	&lt;p&gt;Layer 1&lt;/p&gt;
+  	&lt;p&gt;&lt;a href="#" id="popup-3"&gt;弹层 3&lt;/a&gt;&lt;/p&gt;
+  &lt;/script&gt;
+  &lt;script type="text/tpl" id="layer-2" style="display:none;"&gt;
+  	&lt;p&gt;Layer 2&lt;/p&gt;
+  &lt;/script&gt;
+  &lt;script type="text/tpl" id="layer-3" style="display:none;"&gt;
+  	&lt;p&gt;Layer 3&lt;/p&gt;
+  	&lt;p&gt;&lt;img src="../static/img/product/pic10.jpg" /&gt;&lt;/p&gt;
+  &lt;/script&gt;
+
+  &lt;script src="./static/js/common/popup.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  // 实例化弹层
+  var popup = new Popup();
+
+  // 弹层 1
+  $('#popup-1').on('click', function(evt) {
+  	var renderHtml = $('#layer-1').html();
+  	popup.renderBody(renderHtml).show();
+  	evt.preventDefault();
+  });
+
+  // 弹层 2
+  $('#popup-2').on('click', function(evt) {
+  	var renderHtml = $('#layer-2').html();
+  	popup.renderBody(renderHtml).show();
+  	evt.preventDefault();
+  });
+
+  // 弹层 3
+  $('.ui-popup').delegate('#popup-3', 'click', function(evt) {
+  	var renderHtml = $('#layer-3').html();
+  	popup.renderBody(renderHtml).show();
+  	evt.preventDefault();
+  });
+  &lt;/script&gt;
+  					</pre>
+  				
+  				</div><!--end item-->
+  				
+  			</div>
+
+  		</div>
+  		<div class="col-2">
+  			<ul class="sidebar">
+  				<li><a href="#anchor_slideshow"><em>SlideShow</em>幻灯片播放</a></li>
+  				<li><a href="#anchor_picslide"><em>PicSlide</em>图片滚动</a></li>
+  				<li><a href="#anchor_tab"><em>Tab</em>标签切换</a></li>
+  				<li><a href="#anchor_share"><em>Share</em>分享</a></li>
+  				<li><a href="#anchor_popup"><em>Popup</em>弹层</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <div id="doc-ft">
+  	&copy; 2013-2019 Tom Template
+  </div>
+  <a href="#" class="back-to-top" title="返回顶部"></a>
+  <script type="text/tpl" id="layer-1" style="display:none;">
+  	<h2>标题</h2>
+  	<p>Layer 1</p>
+  	<p><a href="#" id="popup-3">弹层 3</a></p>
+  </script>
+  <script type="text/tpl" id="layer-2" style="display:none;">
+  	<p>Layer 2</p>
+  </script>
+  <script type="text/tpl" id="layer-3" style="display:none;">
+  	<p>Layer 3</p>
+  	<p><img src="../static/img/product/pic10.jpg" /></p>
+  </script>
+  <script src="./static/js/common/require.js"></script>
+  <script src="./static/js/common/popup.js"></script>
+  <script src="./static/js/docs/common.js"></script>
+  <script src="./static/js/prettify/prettify.js"></script>
+  <script src="./static/js/docs/javascript.js"></script>
+</body>
+</html>

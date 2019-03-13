@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="zh-cn"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="zh-cn"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh-cn"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh-cn"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>动画 - Tom Template</title>
+  <link rel="stylesheet" href="./static/css/common/reset.css" />
+  <link rel="stylesheet" href="./static/css/docs/grid.css" />
+  <link rel="stylesheet" href="./static/css/common/component.css" />
+  <link rel="stylesheet" href="./static/js/prettify/prettify.css" />
+  <link rel="stylesheet" href="./static/css/docs/common.css" />
+  <link rel="stylesheet" href="./static/css/docs/animation.css" />
+</head>
+<body>
+  <div id="doc-hd">
+  	<a href="index.html"><img src="./static/img/docs/logo.png" width="165" height="120" class="logo" alt="Tom Template" /></a>
+  	<h1>Tom Template<em>基础模板框架</em></h1>
+  	<div class="tom-pri-nav">
+  		<ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./basic.html">基础</a></li>
+        <li><a href="./component.html">组件</a></li>
+        <li class="active"><a href="./animation.html">动画</a></li>
+        <li><a href="./example/index.html" target="_blank">演示</a></li>
+        <li><a href="https://github.com/ztl/tomtemplate/" target="_blank">下载</a></li>
+      </ul>
+  	</div>
+  </div>
+  <div id="doc-bd">
+  	<div class="grid-2c1">
+  		<div class="col-1">
+
+  			<div class="tom-content">
+  				<h1>动画</h1>
+
+  				<div class="tom-item">
+  					<h2 class="tom-tit" id="anchor_animation">动画 <em>animation</em></h2>
+
+  					<div class="tom-demo">
+  						<h3 class="tom-subtit">Demo：</h3>
+  <div class="scene">
+  	<div class="item balloon"></div>
+  	<div class="item cloud"></div>
+  	<div class="item dog"></div>
+  	<div class="item light"></div>
+  	<div class="item man"></div>
+  	<div class="item seagull"></div>
+  	<div class="item xiyangyang"></div>
+  </div>
+
+  					</div>
+
+  					<h3 class="tom-subtit">代码：</h3>
+  					<pre>
+  /* 动画场景 */
+  .scene{background:#fad521;height:500px;position:relative;overflow:hidden;
+  	-webkit-perspective:800px;
+  }
+  .scene .item{position:absolute;}
+  .scene .balloon{background:url(../../img/docs/balloon.png) no-repeat;width:86px;height:107px;right:-86px;top:120px;
+  	-webkit-animation:balloon 4s linear 2s forwards;
+  }
+  .scene .cloud{background:url(../../img/docs/cloud.png) no-repeat;width:119px;height:75px;right:20px;top:20px;
+  	-webkit-animation:cloud 5s linear infinite;
+  }
+  .scene .dog{background:url(../../img/docs/dog.png) no-repeat;width:73px;height:97px;left:50px;bottom:20px;
+  	-webkit-animation:dog 1s ease-in;
+  }
+  .scene .light{background:url(../../img/docs/light.png) no-repeat 50% 50%;width:770px;height:500px;left:0;top:0;
+  	-webkit-animation:light .2s linear 2s backwards;
+  }
+  .scene .man{background:url(../../img/docs/man.png) no-repeat 50% 50%;width:169px;height:212px;left:50%;top:100px;margin-left:-85px;
+  	-webkit-animation:man .2s linear 1.8s backwards;
+  }
+  .scene .seagull{background:url(../../img/docs/seagull.png) no-repeat;width:124px;height:37px;right:160px;top:80px;
+  	-webkit-animation:seagull .5s ease 1.5s backwards;
+  }
+  .scene .sun{background:url(../../img/docs/sun.png) no-repeat;width:141px;height:139px;left:5px;top:5px;
+  	-webkit-animation:sun 1s ease .1s;
+  	-moz-animation:sun 1s ease .1s;
+  	-o-animation:sun 1s ease .1s;
+  	-ms-animation:sun 1s ease .1s;
+  	animation:sun 1s ease .1s;
+  }
+  .scene .xiyangyang{background:url(../../img/docs/xiyangyang.png) no-repeat;width:216px;height:260px;right:50px;bottom:20px;
+  	-webkit-transform-style:preserve-3d;
+  	-webkit-animation:xiyangyang 2.5s ease-in-out 2.5s backwards;
+  }
+
+  /* 热气球 */
+  @-webkit-keyframes balloon{
+  	0%{
+  		opacity:0;
+  		-webkit-transform:translate(0, 0);
+  	}
+  	100%{
+  		opacity:1;
+  		-webkit-transform:translate(-200px, 0);
+  	}
+  }
+
+  /* 云彩 */
+  @-webkit-keyframes cloud{
+  	0%{
+  		-webkit-transform:translate(0, 0);
+  	}	
+  	50%{
+  		-webkit-transform:translate(-20px, 10px);
+  	}
+  	100%{
+  		-webkit-transform:translate(0, 0);
+  	}
+  }
+
+  /* 狗 */
+  @-webkit-keyframes dog{
+  	0%{
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.1) rotate(-15deg);
+  	}
+  	20%{
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.2) rotate(0deg);
+  	}
+  	40%{
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.4) rotate(15deg);
+  	}
+  	60%{
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.6) rotate(0deg);
+  	}
+  	80%{
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.8) rotate(-15deg);
+  	}
+  	100%{
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(1) rotateZ(0deg);
+  	}
+  }
+
+  /* 光 */
+  @-webkit-keyframes light{
+  	0%{
+  		-webkit-transform:scale(0);
+  	}
+  	100%{
+  		-webkit-transform:scale(1);
+  	}
+  }
+
+  /* 人 */
+  @-webkit-keyframes man{
+  	0%{
+  		-webkit-transform:translate(0, -320px);
+  	}
+  	100%{
+  		-webkit-transform:translate(0, 0);
+  	}
+  }
+
+  /* 海鸥 */
+  @-webkit-keyframes seagull{
+  	0%{
+  		opacity:0;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.1) rotate(-15deg);
+  	}
+  	20%{
+  		opacity:0;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.2) rotate(0deg);
+  	}
+  	40%{
+  		opacity:1;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.4) rotate(15deg);
+  	}
+  	60%{
+  		opacity:1;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.6) rotate(0deg);
+  	}
+  	80%{
+  		opacity:1;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.8) rotate(-15deg);
+  	}
+  	100%{
+  		opacity:1;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(1) rotateZ(0deg);
+  	}
+  }
+
+  /* 太阳 */
+  @-webkit-keyframes sun{
+  	0%{
+  		opacity:0;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.1) rotate(0deg);
+  	}
+  	33%{
+  		opacity:0;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.3) rotate(0deg);
+  	}			
+      50%{
+  		opacity:1;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(.5) rotate(180deg);
+  	}
+  	100%{
+  		opacity:1;
+  		-webkit-transform-origin:50% 50%;
+  		-webkit-transform:scale(1) rotate(360deg);
+  	}
+  }
+
+  /* 喜洋洋 */
+  @-webkit-keyframes xiyangyang{
+  	0%{
+  		-webkit-transform:translate(265px, 0);
+  	}
+  	50%{
+  		-webkit-transform:rotateY(0deg);
+  	}			
+  	100%{
+  		-webkit-transform:rotateY(360deg);
+  	}
+  }
+  					</pre>
+  				</div><!--end item-->
+
+  			</div>
+
+  		</div>
+  		<div class="col-2">
+  			<ul class="sidebar">
+  				<li><a href="#anchor_animation"><em>animation</em>动画</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <div id="doc-ft">
+  	&copy; 2013-2019 Tom Template
+  </div>
+  <a href="#" class="back-to-top" title="返回顶部"></a>
+  <script src="./static/js/common/require.js"></script>
+  <script src="./static/js/docs/common.js"></script>
+  <script src="./static/js/prettify/prettify.js"></script>
+  <script src="./static/js/docs/animation.js"></script>
+</body>
+</html>
