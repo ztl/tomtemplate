@@ -1,6 +1,8 @@
 /* common */
 body{font-family:"Microsoft Yahei";}
 
+#doc-bd{-webkit-font-smoothing:antialiased;}
+
 /* section */
 .section{position:relative;min-width:1200px;}
 .section img.bg{width:100%;}
